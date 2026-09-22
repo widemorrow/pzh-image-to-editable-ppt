@@ -68,7 +68,7 @@ GitHub's repository-content transport does not accept these binary archives in o
 bash scripts/rebuild-skills.sh
 ```
 
-The rebuilt files are written to `dist/` with the package names shown above. The release draft for `v1.0.0` uses the same edition descriptions; once GitHub's binary upload path is available, the two archives can also be attached there directly.
+The rebuilt files are written to `dist/` with the package names shown above. The published [v1.0.0 release](https://github.com/widemorrow/pzh-image-to-editable-ppt/releases/tag/v1.0.0) also provides the two archives as direct binary downloads.
 
 ## Former names and product lineage
 

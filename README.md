@@ -62,6 +62,14 @@ Complex photos, illustrations, logos, and highly semantic visual assets may rema
 
 Each archive contains its own `SKILL.md`, UI metadata, scripts, references, tests where applicable, and the icon assets required by that edition. Extract the archive with `SKILL.md` at the skill root before installing it into an AgentSkills-compatible runtime.
 
+GitHub's repository-content transport does not accept these binary archives in one API request, so this first public repository version stores each archive as ordered, checksum-preserving Base64 parts under `downloads/`. Run the included rebuild script locally to recreate the original `.skill` files; the script validates the archive after decoding. This keeps the package bytes recoverable while the repository remains easy to inspect through the GitHub connector.
+
+```bash
+bash scripts/rebuild-skills.sh
+```
+
+The rebuilt files are written to `dist/` with the package names shown above. The release draft for `v1.0.0` uses the same edition descriptions; once GitHub's binary upload path is available, the two archives can also be attached there directly.
+
 ## Former names and product lineage
 
 The public names intentionally avoid the old `Lite` and `Flash` labels:
@@ -83,4 +91,3 @@ The new names describe the actual compatibility roles more accurately. `Base` do
 The packaged skills include open-source icon snapshots. Their licenses, attribution requirements, aliases, and trademark notes are preserved inside each package under `assets/icons/THIRD_PARTY_NOTICES.md`. A summary is available in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 In particular, Simple Icons uses CC0 for the project while individual brand marks may still have separate trademark or usage requirements. Inclusion in the package does not grant trademark permission.
-

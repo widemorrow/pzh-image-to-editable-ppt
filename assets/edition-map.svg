@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">PZH Image to Editable PPT edition map</title>
+  <desc id="desc">Images and image-based slides enter two editions: Base for Codex and Kimi, and Cross for DeepSeek and Hunyuan 4. Both produce editable PowerPoint.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#eef2ff"/>
+    </linearGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="cross" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#c084fc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#172554" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="650" rx="32" fill="url(#bg)"/>
+  <circle cx="1080" cy="90" r="170" fill="#dbeafe" opacity="0.45"/>
+  <circle cx="120" cy="575" r="190" fill="#ede9fe" opacity="0.5"/>
+
+  <text x="70" y="76" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#0f172a">PZH Image to Editable PPT</text>
+  <text x="70" y="112" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#475569">Two execution paths, one editable PowerPoint goal</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="210" width="220" height="170" rx="24" fill="#ffffff"/>
+    <text x="105" y="255" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#0f172a">Visual sources</text>
+    <text x="105" y="295" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#475569">Images</text>
+    <text x="105" y="323" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#475569">Screenshots</text>
+    <text x="105" y="351" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#475569">PDF / image PPTX</text>
+  </g>
+
+  <path d="M290 295 H410" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M410 295 C445 295 445 205 485 205" fill="none" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M410 295 C445 295 445 385 485 385" fill="none" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="485" y="135" width="285" height="140" rx="24" fill="url(#base)"/>
+    <text x="525" y="185" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#ffffff">Base</text>
+    <text x="525" y="220" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#eff6ff">Optimized for Codex / Kimi</text>
+    <text x="525" y="248" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#dbeafe">Everyday editable slide reconstruction</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="485" y="335" width="285" height="140" rx="24" fill="url(#cross)"/>
+    <text x="525" y="385" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#ffffff">Cross</text>
+    <text x="525" y="420" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#faf5ff">Optimized for DeepSeek / Hunyuan 4</text>
+    <text x="525" y="448" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#f3e8ff">Cross-model high-fidelity workflow</text>
+  </g>
+
+  <path d="M770 205 H900" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M770 405 H900" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="900" y="210" width="230" height="170" rx="24" fill="#0f172a"/>
+    <text x="940" y="260" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#ffffff">Editable PPTX</text>
+    <text x="940" y="300" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#cbd5e1">Editable text</text>
+    <text x="940" y="328" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#cbd5e1">Native structure</text>
+    <text x="940" y="356" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#cbd5e1">Independent assets</text>
+  </g>
+
+  <text x="70" y="590" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#64748b">PZH Image to Editable PPT · Base / Cross</text>
+</svg>

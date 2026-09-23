@@ -6,6 +6,28 @@
 
 PZH Image to Editable PPT is a two-edition Agent Skill family for rebuilding visual slide sources into editable `.pptx` files. Both editions retain the complete reconstruction capability and work chain. Base adds model-specific optimization for GPT, Kimi K3, and Claude, while Cross focuses on compatibility with DeepSeek V4.1, GLM 5.3, Tencent Hunyuan 4, and other domestic models.
 
+## Real reconstruction examples
+
+The examples below come from real PZH Image to Editable PPT reconstruction runs. Each image places the source page above the rebuilt PPTX render, so you can compare the visual result directly. Company logos and identifiable enterprise marks have been covered for public demonstration; the underlying page structure, editable-object arrangement, and visual comparison remain unchanged.
+
+### Multi-agent collaboration page
+
+This example shows a dense capability map with repeated cards, icon assets, task-chain nodes, and a reusable foundation layer.
+
+<img src="assets/examples/agent-collaboration-redacted.jpg" alt="Source screenshot above and rebuilt editable PPTX render below for a multi-agent collaboration page, with enterprise information redacted" width="960" />
+
+### Payment-management workflow page
+
+This example shows a business workflow with nested panels, process arrows, drill-down relationships, charts, and a structured output bar.
+
+<img src="assets/examples/dip-management-redacted.jpg" alt="Source screenshot above and rebuilt editable PPTX render below for a payment-management workflow page, with enterprise information redacted" width="960" />
+
+### Hospital-scenario architecture page
+
+This example shows a multi-column architecture page with layered cards, section headers, process relationships, and a final summary model.
+
+<img src="assets/examples/hospital-scenario-redacted.jpg" alt="Source screenshot above and rebuilt editable PPTX render below for a hospital-scenario architecture page, with enterprise information redacted" width="960" />
+
 ## Choose an edition
 
 | Edition | Model direction | Main positioning | Practical result |

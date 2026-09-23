@@ -4,20 +4,22 @@
 
 ![PZH Image to Editable PPT edition map](assets/edition-map.svg)
 
-PZH Image to Editable PPT is a two-edition Agent Skill family for rebuilding visual slide sources into editable `.pptx` files. The output is designed for continued editing in PowerPoint or WPS: text, cards, connectors, tables, icons, and other supported page elements are handled as separate objects whenever the selected workflow can recover them reliably.
+PZH Image to Editable PPT is a two-edition Agent Skill family for rebuilding visual slide sources into editable `.pptx` files. Both editions retain the complete reconstruction capability and work chain. Base adds model-specific optimization for GPT, Kimi K3, and Claude, while Cross focuses on compatibility with DeepSeek V4.1, GLM 5.3, Tencent Hunyuan 4, and other domestic models.
 
 ## Choose an edition
 
-| Edition | Best fit | Model compatibility | Main strengths |
+| Edition | Model direction | Main positioning | Practical result |
 | --- | --- | --- | --- |
-| **Base** | Single-page business cards, flows, tables, and regular visual slides | Optimized for Codex and Kimi | Clear three-stage workflow, editable text and structure, SVG-to-transparent-PNG icon handling, practical everyday delivery |
-| **Cross** | Complex pages, scanned PDFs, image-based PPTX, multi-element diagrams, and selected page regions | Optimized for DeepSeek and Hunyuan 4, with broader cross-model compatibility | High-fidelity reconstruction, icon and gradient evidence, measured corners, text safeguards, delivery gates, and fail-closed validation |
+| **Base** | GPT series, Kimi K3, and Claude | Full capability and full work chain with model-specific efficiency optimization | In the current benchmark scope, more than 60% faster and about 50% lower quota consumption, with the same output boundary |
+| **Cross** | DeepSeek V4.1, GLM 5.3, Tencent Hunyuan 4, and other domestic models | Full-chain compatibility edition for complex reconstruction tasks | Preserves the complete analysis, rebuild, render review, and delivery-validation chain |
 
-The two editions share the same product goal. They differ in execution strategy and model compatibility, so choose the edition that matches the agent runtime you are using.
+The two editions share the same capability foundation. Base prioritizes speed and quota efficiency on GPT, Kimi K3, and Claude; Cross prioritizes full-chain compatibility on DeepSeek V4.1, GLM 5.3, Tencent Hunyuan 4, and similar model environments.
 
 ## Base
 
-Use **Base** when you need a dependable, practical reconstruction workflow for ordinary business pages.
+Use **Base** when you want the complete reconstruction capability with a faster, more quota-efficient execution path on GPT, Kimi K3, or Claude.
+
+Base keeps the complete capability set and work chain of the Cross edition. It adds targeted instructions, planning shortcuts, context control, and model-specific execution adjustments for GPT, Kimi K3, and Claude. In the current benchmark scope, the optimized path improved execution speed by more than 60% and reduced quota consumption by about 50%.
 
 It is a good fit for:
 
@@ -27,11 +29,13 @@ It is a good fit for:
 - single-page screenshots;
 - pages that need editable text, cards, connectors, and common icons.
 
-Base is optimized for Codex and Kimi. It keeps the workflow focused: inspect the page, build an editable object plan, generate the PPTX, then review the rendered result and focused corrections.
+Base keeps the same core chain: inspect the page, build an editable object plan, generate the PPTX, review the rendered result, and apply focused corrections. The optimization changes how efficiently the chain runs on the target models; it does not remove the core reconstruction capability.
 
 ## Cross
 
-Use **Cross** when the source page is visually dense or when the skill needs to run reliably across different agent models.
+Use **Cross** when you need the complete work chain to run on DeepSeek V4.1, GLM 5.3, Tencent Hunyuan 4, or other domestic model environments.
+
+Cross is the full-chain compatibility edition. It preserves the complete workflow from source analysis and object planning through editable PPTX generation, render review, correction, and delivery validation. It is designed for tasks where maintaining the full reasoning and verification chain matters more than minimizing execution cost.
 
 It is a good fit for:
 
@@ -41,7 +45,7 @@ It is a good fit for:
 - rebuilding a selected image region from an existing PPT;
 - workflows that require stronger evidence and delivery gates.
 
-Cross is optimized for DeepSeek and Hunyuan 4, while keeping a broader cross-model execution path. It includes the high-fidelity controls from the former Flash V6 line, including icon asset handling, gradient evidence, measured corner treatment, text safeguards, and fail-closed validation.
+Cross is optimized for DeepSeek V4.1, GLM 5.3, Tencent Hunyuan 4, and similar domestic model environments. It includes the high-fidelity controls from the former Flash V6 line, including icon asset handling, gradient evidence, measured corner treatment, text safeguards, and fail-closed validation.
 
 ## What “editable” means
 
@@ -57,8 +61,8 @@ Complex photos, illustrations, logos, and highly semantic visual assets may rema
 
 ## Package files
 
-- `pzh-image-to-editable-ppt-base.skill` — Base edition, optimized for Codex and Kimi.
-- `pzh-image-to-editable-ppt-cross.skill` — Cross edition, optimized for DeepSeek and Hunyuan 4.
+- `pzh-image-to-editable-ppt-base.skill` — Base edition, optimized for GPT, Kimi K3, and Claude.
+- `pzh-image-to-editable-ppt-cross.skill` — Cross edition, optimized for DeepSeek V4.1, GLM 5.3, Tencent Hunyuan 4, and other domestic models.
 
 Each archive contains its own `SKILL.md`, UI metadata, scripts, references, tests where applicable, and the icon assets required by that edition. Extract the archive with `SKILL.md` at the skill root before installing it into an AgentSkills-compatible runtime.
 
